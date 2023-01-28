@@ -59,6 +59,7 @@ pub async fn vote(ctx: &Context, msg: &Message) -> CommandResult {
         ),
     )
     .await?;
+    println!("Vote update");
     Ok(())
 }
 
@@ -115,6 +116,7 @@ pub async fn newvote(ctx: &Context, msg: &Message) -> CommandResult {
     }
 
     msg.reply(ctx, "Vote created!").await?;
+    println!("New vote created");
     Ok(())
 }
 
